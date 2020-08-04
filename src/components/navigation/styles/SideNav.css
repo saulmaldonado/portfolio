@@ -1,0 +1,69 @@
+.sidenav {
+  border: black solid 2px;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 25vw;
+  right: -25vw;
+  top: 0px;
+  background-color: purple;
+  box-sizing: border-box;
+
+  transition: 0.5s ease-in-out;
+}
+
+.sidenav.open {
+  right: 0vw;
+}
+
+.exit-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.exit-btn-x {
+  width: 25px;
+  height: 3px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.exit-btn-x::before,
+.exit-btn-x::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.exit-btn-x::before {
+  transform: translateY(-7px);
+  transform: rotate(45deg);
+}
+.exit-btn-x:after {
+  transform: translateY(7px);
+  transform: rotate(-45deg);
+}
+
+.exit-btn:hover .exit-btn-x::before {
+  width: 37px;
+  transform: translateY(-7px);
+  transform: rotate(45deg);
+}
+
+.exit-btn:hover .exit-btn-x::after {
+  width: 37px;
+  transform: translateY(7px);
+  transform: rotate(-45deg);
+}

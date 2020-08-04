@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import './styles/layout.css';
+import SideNav from './navigation/SideNav';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,9 +17,11 @@ const Layout = ({ children }) => {
     }
   `);
 
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} sidebarRef={sidebarRef} />
       <div
         style={{
           margin: `0 auto`,
@@ -33,6 +29,7 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <SideNav sidebarRef={sidebarRef} />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

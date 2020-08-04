@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { FC, useState, useRef } from 'react';
 
 import './styles/header.css';
-import Hamburger from './navigation/hamburger';
 
-const Header = ({ siteTitle }) => (
+type Props = {
+  siteTitle: string;
+  sidebarRef: React.MutableRefObject<HTMLDivElement>;
+};
+const Header: FC<Props> = ({ siteTitle, sidebarRef }) => (
   <header>
-    <MenuButton className='menu-button' />
+    <MenuButton className='menu-button' sidebarRef={sidebarRef} />
   </header>
 );
 
-const MenuButton: React.FC<{ className: string }> = ({ className }) => {
+const MenuButton: FC<{
+  className: string;
+  sidebarRef: React.MutableRefObject<HTMLDivElement>;
+}> = ({ className, sidebarRef }) => {
   return (
-    <div className={className}>
-      <h3>Menu</h3>
-      <Hamburger />
+    <div className={className} onClick={() => sidebarRef.current.classList.add('open')}>
+      <h4>Menu</h4>
+      <div className='menu-btn'>
+        <div className='menu-btn-burger'></div>
+      </div>
     </div>
   );
 };

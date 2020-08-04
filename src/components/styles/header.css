@@ -10,14 +10,74 @@ header {
 .menu-button {
   border: black solid 2px;
   display: flex;
+  justify-content: space-around;
   padding: 5px;
+  width: 100px;
   border-radius: 5px;
   margin-right: 10px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-header > div > h3 {
+.menu-button:hover {
+  background-color: black;
+}
+
+.menu-button.open {
+  position: relative;
+  margin-right: 25vw;
+  z-index: 2;
+}
+
+header > div > h4 {
   margin: 0;
   text-align: center;
   align-self: center;
   box-sizing: border-box;
+  transition: ease-in-out 0.2s;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  transform: translateY(-7px);
+}
+.menu-btn-burger::after {
+  transform: translateY(7px);
+}
+
+.menu-button:hover .menu-btn-burger::before {
+  transform: translateY(-10px);
+}
+.menu-button:hover .menu-btn-burger::after {
+  transform: translateY(10px);
 }
