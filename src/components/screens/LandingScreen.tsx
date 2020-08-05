@@ -108,6 +108,10 @@ const LandingScreen = () => {
                 size='lg'
               />
             </div>
+            <button className='call-to-action'>
+              <span>View my work</span>
+              <div className='arrow'></div>
+            </button>
           </div>
         </div>
       </div>

@@ -5,10 +5,13 @@
   background: url('../../../images/landing-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+
+  --primary-text-color: white;
+  --secondary-text-color: grey;
 }
 
 .landing-mask-loading {
-  animation: 2s ease-in-out 0s 1 Background1;
+  animation: 1s ease-in-out 0s 1 Background1;
 }
 
 .landing-mask {
@@ -27,7 +30,7 @@
   height: 100%;
   margin-left: 5vw;
 
-  animation: 1s ease-in-out 1s 1 LandingScreen both;
+  animation: 1s ease-in-out 0.5s 1 LandingScreen both;
 }
 
 .title-section h1 {
@@ -55,7 +58,6 @@
   font-size: 1.5rem;
   position: relative;
   bottom: 20px;
-  /* white-space: nowrap; */
 }
 
 .subtitle {
@@ -70,6 +72,63 @@
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.call-to-action {
+  max-width: 300px;
+  min-height: 75px;
+  background-color: transparent;
+  border: white solid 2px;
+  color: white;
+  font-size: x-large;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.3s ease-in-out;
+
+  animation: 0.5s ease-in-out 3s 1 CallToAction both;
+}
+
+.call-to-action:hover {
+  background-color: #05968a;
+}
+
+.arrow {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-text-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow::before,
+.arrow::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background: var(--primary-text-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow {
+  transform: rotate(90deg);
+}
+
+.arrow::before {
+  transform: rotate(135deg) translate(3px, -3px);
+}
+.arrow::after {
+  transform: rotate(-135deg) translate(3px, 3px);
+}
+
+.call-to-action:hover .arrow {
+  background-color: var(--primary-text-color);
+  animation: 0.7s ease-in-out 0s infinite ArrowBounce both;
 }
 
 @keyframes Background1 {
@@ -116,5 +175,31 @@
 
     width: 100%;
     opacity: 1;
+  }
+}
+
+@keyframes ArrowBounce {
+  0% {
+    transform: rotate(90deg) translateX(0px);
+  }
+
+  50% {
+    transform: rotate(90deg) translateX(10px);
+  }
+
+  100% {
+    transform: rotate(90deg) translateX(0px);
+  }
+}
+
+@keyframes CallToAction {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
