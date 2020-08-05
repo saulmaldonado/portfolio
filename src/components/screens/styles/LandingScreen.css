@@ -9,11 +9,14 @@
   background-repeat: no-repeat;
 }
 
+.landing-mask-loading {
+  animation: 2s ease-in-out 0s 1 Background1;
+}
+
 .landing-mask {
   z-index: -1;
   height: 100vh;
   width: 100%;
-  background: rgb(105, 105, 105);
   background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgba(77, 77, 77, 0.5) 100%);
 }
 
@@ -22,7 +25,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: ; */
   width: 60%;
   height: 100%;
   margin-left: 5vw;
@@ -42,22 +44,25 @@
   display: block;
   position: relative;
   bottom: -10px;
-  width: 100%;
   height: 5px;
   border-radius: 10px;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
+
+  animation: 1s ease-in-out 2s 1 Separator both;
 }
 
-.landing h4 {
+.subtitle h4 {
   color: white;
   font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 .subtitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: 1s ease-in-out 2s 1 Icons both;
 }
 
 .subtitle .description {
@@ -66,10 +71,6 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .subtitle :nth-child(2) {
-  margin-left: 100px;
-} */
 
 .subtitle .icon-wrapper {
   border: white solid 2px;
@@ -83,6 +84,16 @@
   margin-right: 10px;
 }
 
+@keyframes Background1 {
+  0% {
+    background: rgb(39, 39, 39);
+  }
+
+  100% {
+    background: rgba(39, 39, 39, 0);
+  }
+}
+
 @keyframes LandingScreen {
   0% {
     transform: translateX(-25%);
@@ -91,6 +102,31 @@
 
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Separator {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@keyframes Icons {
+  0% {
+    transform: translateX(-25%);
+
+    width: 80%;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+
+    width: 100%;
     opacity: 1;
   }
 }

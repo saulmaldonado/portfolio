@@ -3,6 +3,32 @@ module.exports = {
     title: `Saul Maldonado`,
     description: `Full Stack Web Developer`,
     author: `Saul Maldonado`,
+    socials: {
+      linkedin: {
+        username: 'saulmaldonado4',
+        link: 'https://www.linkedin.com/in/saulmaldonado4/',
+      },
+      twitter: {
+        username: 'sa_mal',
+        link: 'https://twitter.com/saul_mal',
+      },
+      stackoverflow: {
+        username: 'saulmaldonado',
+        link: 'https://stackoverflow.com/users/12286015/saulmaldonado',
+      },
+      github: {
+        username: 'saulmaldonado',
+        link: 'https://github.com/saulmaldonado',
+      },
+      email: {
+        username: 'email',
+        link: 'mailto:samaldonado4@gmail.com',
+      },
+      resume: {
+        username: 'resume',
+        link: 'https://drive.google.com/file/d/1fkjm3ERx74OhskyAxA9XCIKLGu7h1n92/view?usp=sharing',
+      },
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
