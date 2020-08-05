@@ -1,11 +1,23 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
-const IconWrapper: FC<FontAwesomeIconProps & { handle?: string }> = ({ handle, ...props }) => {
+import '../components/styles/IconWrapper.css';
+import { Link } from 'gatsby';
+
+const IconWrapper: FC<FontAwesomeIconProps & { handle?: string; link?: string }> = ({
+  link,
+  handle,
+  ...props
+}) => {
   return (
-    <div className='icon-wrapper'>
-      <FontAwesomeIcon {...props} />
-    </div>
+    <a href={link} target='_blank'>
+      <div className='icon-with-title'>
+        <div className='icon-wrapper'>
+          <FontAwesomeIcon {...props} />
+        </div>
+        {handle && <span className='icon-title'>{handle}</span>}
+      </div>
+    </a>
   );
 };
 

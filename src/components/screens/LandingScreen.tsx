@@ -18,10 +18,45 @@ const LandingScreen = () => {
         siteMetadata {
           title
           description
+          socials {
+            linkedin {
+              username
+              link
+            }
+            twitter {
+              username
+              link
+            }
+            stackoverflow {
+              username
+              link
+            }
+            github {
+              username
+              link
+            }
+            email {
+              username
+              link
+            }
+            resume {
+              username
+              link
+            }
+          }
         }
       }
     }
   `);
+  const {
+    linkedin,
+    twitter,
+    stackoverflow,
+    github,
+    email,
+    resume,
+  } = data.site.siteMetadata.socials;
+
   return (
     <main className='landing'>
       <div className='landing-mask-loading'>
@@ -30,12 +65,48 @@ const LandingScreen = () => {
             <h1 className='title'>{data.site.siteMetadata.title}</h1>
             <div className='subtitle'>
               <h4>{data.site.siteMetadata.description}</h4>
-              <IconWrapper icon={faLinkedin} color='white' size='lg' />
-              <IconWrapper icon={faGithub} color='white' size='lg' />
-              <IconWrapper icon={faTwitter} color='white' size='lg' />
-              <IconWrapper icon={faStackOverflow} color='white' size='lg' />
-              <IconWrapper icon={faEnvelope} color='white' size='lg' />
-              <IconWrapper icon={faFile} color='white' size='lg' />
+              <IconWrapper
+                handle={linkedin.username}
+                link={linkedin.link}
+                icon={faLinkedin}
+                color='white'
+                size='lg'
+              />
+              <IconWrapper
+                handle={github.username}
+                link={github.link}
+                icon={faGithub}
+                color='white'
+                size='lg'
+              />
+              <IconWrapper
+                handle={twitter.username}
+                link={twitter.link}
+                icon={faTwitter}
+                color='white'
+                size='lg'
+              />
+              <IconWrapper
+                handle={stackoverflow.username}
+                link={stackoverflow.link}
+                icon={faStackOverflow}
+                color='white'
+                size='lg'
+              />
+              <IconWrapper
+                handle={email.username}
+                link={email.link}
+                icon={faEnvelope}
+                color='white'
+                size='lg'
+              />
+              <IconWrapper
+                handle={resume.username}
+                link={resume.link}
+                icon={faFile}
+                color='white'
+                size='lg'
+              />
             </div>
           </div>
         </div>

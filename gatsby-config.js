@@ -5,19 +5,19 @@ module.exports = {
     author: `Saul Maldonado`,
     socials: {
       linkedin: {
-        username: 'saulmaldonado4',
+        username: '@saulmaldonado4',
         link: 'https://www.linkedin.com/in/saulmaldonado4/',
       },
       twitter: {
-        username: 'sa_mal',
+        username: '@sa_mal',
         link: 'https://twitter.com/saul_mal',
       },
       stackoverflow: {
-        username: 'saulmaldonado',
+        username: '@saulmaldonado',
         link: 'https://stackoverflow.com/users/12286015/saulmaldonado',
       },
       github: {
-        username: 'saulmaldonado',
+        username: '@saulmaldonado',
         link: 'https://github.com/saulmaldonado',
       },
       email: {
