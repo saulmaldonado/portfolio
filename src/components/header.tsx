@@ -7,7 +7,7 @@ type Props = {
   sidebarRef: React.MutableRefObject<HTMLDivElement>;
 };
 const Header: FC<Props> = ({ siteTitle, sidebarRef }) => (
-  <header>
+  <header className='main-header'>
     <MenuButton sidebarRef={sidebarRef} />
   </header>
 );

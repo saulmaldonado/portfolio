@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
 import '../components/styles/IconWrapper.css';
-import { Link } from 'gatsby';
 
 const IconWrapper: FC<FontAwesomeIconProps & { handle?: string; link?: string }> = ({
   link,
