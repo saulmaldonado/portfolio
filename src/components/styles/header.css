@@ -1,26 +1,30 @@
 header {
-  color: white;
-  border: black solid 2px;
-  background: rebeccapurple;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  float: right;
+  --primary-text-color: white;
+  --secondary-text-color: grey;
 }
 
 .menu-button {
   border: black solid 2px;
+  color: var(--secondary-text-color);
+  margin-top: 5px;
+  margin-right: 5px;
   display: flex;
   justify-content: space-around;
   padding: 5px;
   width: 100px;
   border-radius: 5px;
   margin-right: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .menu-button:hover {
   background-color: black;
+  color: var(--primary-text-color);
 }
 
 .menu-button.open {
@@ -34,7 +38,6 @@ header > div > h4 {
   text-align: center;
   align-self: center;
   box-sizing: border-box;
-  transition: ease-in-out 0.2s;
 }
 
 .menu-btn {
@@ -44,16 +47,15 @@ header > div > h4 {
   align-items: center;
   width: 30px;
   height: 40px;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background-color: var(--secondary-text-color);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-btn-burger::before,
@@ -62,7 +64,7 @@ header > div > h4 {
   position: absolute;
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: var(--secondary-text-color);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.2s ease-in-out;
@@ -75,9 +77,15 @@ header > div > h4 {
   transform: translateY(7px);
 }
 
+.menu-button:hover .menu-btn-burger {
+  background-color: var(--primary-text-color);
+}
+
 .menu-button:hover .menu-btn-burger::before {
+  background-color: var(--primary-text-color);
   transform: translateY(-10px);
 }
 .menu-button:hover .menu-btn-burger::after {
+  background-color: var(--primary-text-color);
   transform: translateY(10px);
 }

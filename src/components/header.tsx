@@ -1,4 +1,4 @@
-import React, { FC, useState, useRef } from 'react';
+import React, { FC } from 'react';
 
 import './styles/header.css';
 
@@ -8,16 +8,15 @@ type Props = {
 };
 const Header: FC<Props> = ({ siteTitle, sidebarRef }) => (
   <header>
-    <MenuButton className='menu-button' sidebarRef={sidebarRef} />
+    <MenuButton sidebarRef={sidebarRef} />
   </header>
 );
 
 const MenuButton: FC<{
-  className: string;
   sidebarRef: React.MutableRefObject<HTMLDivElement>;
-}> = ({ className, sidebarRef }) => {
+}> = ({ sidebarRef }) => {
   return (
-    <div className={className} onClick={() => sidebarRef.current.classList.add('open')}>
+    <div className='menu-button' onClick={() => sidebarRef.current.classList.add('open')}>
       <h4>Menu</h4>
       <div className='menu-btn'>
         <div className='menu-btn-burger'></div>

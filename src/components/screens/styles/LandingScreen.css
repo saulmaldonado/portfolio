@@ -1,0 +1,96 @@
+.landing {
+  position: relative;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+
+  background: url('../../../images/landing-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-mask {
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  background: rgb(105, 105, 105);
+  background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgba(77, 77, 77, 0.5) 100%);
+}
+
+.title-section {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: ; */
+  width: 60%;
+  height: 100%;
+  margin-left: 5vw;
+
+  animation: 1s ease-in-out 1s 1 LandingScreen both;
+}
+
+.title-section h1 {
+  margin: 0;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+.title-section h1::after {
+  content: '';
+  display: block;
+  position: relative;
+  bottom: -10px;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.landing h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle .description {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .subtitle :nth-child(2) {
+  margin-left: 100px;
+} */
+
+.subtitle .icon-wrapper {
+  border: white solid 2px;
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+@keyframes LandingScreen {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
