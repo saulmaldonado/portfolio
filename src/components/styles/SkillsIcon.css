@@ -1,5 +1,5 @@
 .skills-icon {
-  border: rgb(185, 185, 185) 2px solid;
+  border: rgb(143, 143, 143) 2px solid;
   border-radius: 5px;
   width: 200px;
   margin-left: 10px;
@@ -9,12 +9,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(184, 184, 184, 0.294);
+  /* background-color: rgba(184, 184, 184, 0.294); */
 
   transition: all 0.2s ease-in-out;
 }
 .skills-icon:hover {
-  background-color: black;
+  background-color: #05968a;
+
+  /* background-color: black; */
   border: white 2px solid;
   box-shadow: -4px 3px 2px 1px rgba(240, 240, 240, 0.65);
 }

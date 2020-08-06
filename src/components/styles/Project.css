@@ -1,0 +1,83 @@
+.project-container {
+  border: white solid 2px;
+  width: 45%;
+  max-width: 700px;
+  height: 300px;
+  margin-top: 20px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.project-mockup {
+  border: white solid 2px;
+  width: 50%;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  word-break: keep-all;
+  white-space: normal;
+  line-height: 18px;
+  font-size: 15px;
+  margin-top: 0px;
+}
+.project-details h3 {
+  word-break: break-all;
+  text-align: center;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.project-buttons > a {
+  width: 40%;
+  height: 40px;
+  border: rgb(143, 143, 143) 2px solid;
+  background: transparent;
+  color: white;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in;
+}
+
+.project-buttons > a:hover {
+  background-color: #05968a;
+
+  border: white 2px solid;
+  box-shadow: -4px 3px 2px 1px rgba(240, 240, 240, 0.65);
+}
+
+.project-mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-mockup > img {
+  width: 100%;
+  height: 100%;
+}

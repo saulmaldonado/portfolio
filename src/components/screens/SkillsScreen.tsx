@@ -16,19 +16,18 @@ import {
 
 import SkillsIcon from '../SkillsIcon';
 import './styles/SkillsScreen.css';
-import { faFlask } from '@fortawesome/free-solid-svg-icons';
 
 const SkillsScreen = () => {
   return (
     <section className='skills-section'>
       <header className='skills-header'>
-        <h3>Skills</h3>
+        <h2>Skills</h2>
       </header>
       <div className='skills-subtitle'>
-        <p>Languages and technologies I have experience using for creating products: </p>
+        <p>Languages and technologies I have experience and am component working with: </p>
       </div>
       <div className='skills'>
-        <SkillsIcon icon={faHtml5} color='orange' title='HTML5' size='2x' />
+        <SkillsIcon icon={faHtml5} color='tomato' title='HTML5' size='2x' />
         <SkillsIcon icon={faCss3} color='dodgerblue' title='CSS3' size='2x' />
         <SkillsIcon icon={faJs} color='yellow' title='Javascript' size='2x' />
         <SkillsIcon title='Typescript' size='2x'>
@@ -38,6 +37,9 @@ const SkillsScreen = () => {
           <img src='https://img.icons8.com/color/48/000000/react-native.png' />
         </SkillsIcon>
         <SkillsIcon icon={faReact} color='dodgerblue' title='React' size='2x' />
+        <SkillsIcon title='Redux'>
+          <img src='https://img.icons8.com/color/48/000000/redux.png' />{' '}
+        </SkillsIcon>
         <SkillsIcon icon={faAngular} color='red' title='Angular' size='2x' />
         <SkillsIcon icon={faVuejs} color='green' title='Vue' size='2x' />
         <SkillsIcon icon={faBootstrap} color='purple' title='Bootstrap' size='2x' />
@@ -55,7 +57,7 @@ const SkillsScreen = () => {
         <SkillsIcon title='C#'>
           <img src='https://img.icons8.com/color/48/000000/c-sharp-logo.png' />
         </SkillsIcon>
-        <SkillsIcon icon={faJava} color='white' title='Java' size='2x' />
+        <SkillsIcon icon={faJava} color='tomato' title='Java' size='2x' />
         <SkillsIcon icon={faGitAlt} color='tomato' title='Git' size='2x' />
         <SkillsIcon title='PostgreSQL' size='2x'>
           <img src='https://img.icons8.com/color/48/000000/postgreesql.png' />
