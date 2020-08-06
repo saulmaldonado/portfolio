@@ -36,14 +36,14 @@ const SkillsScreen = () => {
       <p>My current favorite stack to work with:</p>
       <div className='skills'>
         <SkillsIcon title='Typescript' size='2x'>
-          <img src='https://img.icons8.com/color/48/000000/typescript.png' />
+          <img src='https://img.icons8.com/color/48/000000/typescript.png' alt='typescript-icon' />
         </SkillsIcon>
         <SkillsIcon icon={faReact} color='dodgerblue' title='React' size='2x' />
         <SkillsIcon title='GraphQL' size='2x'>
-          <img src='https://img.icons8.com/color/48/000000/graphql.png' />
+          <img src='https://img.icons8.com/color/48/000000/graphql.png' alt='graphql-icon' />
         </SkillsIcon>
         <SkillsIcon title='MongoDB'>
-          <img src='https://img.icons8.com/color/48/000000/mongodb.png' />
+          <img src='https://img.icons8.com/color/48/000000/mongodb.png' alt='mongodb-icon' />
         </SkillsIcon>
       </div>
       <div className='skills-subtitle'>
@@ -54,29 +54,32 @@ const SkillsScreen = () => {
         <SkillsIcon icon={faCss3} color='dodgerblue' title='CSS3' size='2x' />
         <SkillsIcon icon={faJs} color='yellow' title='Javascript' size='2x' />
         <SkillsIcon title='React Native'>
-          <img src='https://img.icons8.com/color/48/000000/react-native.png' />
+          <img
+            src='https://img.icons8.com/color/48/000000/react-native.png'
+            alt='react-native-icon'
+          />
         </SkillsIcon>
         <SkillsIcon title='Redux'>
-          <img src='https://img.icons8.com/color/48/000000/redux.png' />{' '}
+          <img src='https://img.icons8.com/color/48/000000/redux.png' alt='redux-icon' />{' '}
         </SkillsIcon>
         <SkillsIcon icon={faAngular} color='red' title='Angular' size='2x' />
         <SkillsIcon icon={faVuejs} color='green' title='Vue' size='2x' />
         <SkillsIcon icon={faBootstrap} color='purple' title='Bootstrap' size='2x' />
         <SkillsIcon icon={faNodeJs} color='green' title='NodeJS' size='2x' />
         <SkillsIcon title='Apollo' size='2x'>
-          <img src='https://img.icons8.com/color/48/000000/apollo.png' />
+          <img src='https://img.icons8.com/color/48/000000/apollo.png' alt='apollo-icon' />
         </SkillsIcon>
         <SkillsIcon icon={faPython} color='dodgerblue' title='Python' size='2x' />
         <SkillsIcon title='Django'>
-          <img src='https://img.icons8.com/color/48/000000/django.png' />
+          <img src='https://img.icons8.com/color/48/000000/django.png' alt='django-icon' />
         </SkillsIcon>
         <SkillsIcon title='C#'>
-          <img src='https://img.icons8.com/color/48/000000/c-sharp-logo.png' />
+          <img src='https://img.icons8.com/color/48/000000/c-sharp-logo.png' alt='csharp-icon' />
         </SkillsIcon>
         <SkillsIcon icon={faJava} color='tomato' title='Java' size='2x' />
         <SkillsIcon icon={faGitAlt} color='tomato' title='Git' size='2x' />
         <SkillsIcon title='PostgreSQL' size='2x'>
-          <img src='https://img.icons8.com/color/48/000000/postgreesql.png' />
+          <img src='https://img.icons8.com/color/48/000000/postgreesql.png' alt='postgresql-icon' />
         </SkillsIcon>
       </div>
     </section>

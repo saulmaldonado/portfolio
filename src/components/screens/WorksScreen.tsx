@@ -11,11 +11,11 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Project from '../Project';
-import mealthyme from '../../images/mealthyme.gif';
-import simplestudio from '../../images/simplestudio.gif';
-import grocerystrore from '../../images/grocery-store.gif';
-import cryptotracker from '../../images/cryptoTracker.gif';
-import donewithit from '../../images/donewithit.gif';
+import mealthyme from '../../videos/mealthyme.webm';
+import simplestudio from '../../videos/simplestudio.webm';
+import grocerystrore from '../../videos/grocerystore.webm';
+import cryptotracker from '../../videos/cryptoTracker.webm';
+import donewithit from '../../videos/donewithit.webm';
 import redux from '../../images/redux.png';
 import postgresql from '../../images/postgresql.png';
 import stripe from '../../images/stripe.png';
@@ -40,63 +40,63 @@ const WorksScreen = () => {
 A meal planning app where users are able to browse recipes from Spooacular’s API. Users are able to post their own recipes as well as schedule meals using an interactive calendar, build ingredient shopping lists, manage fridges and visualize nutritional information.'
           githubLink='https://github.com/saulmaldonado/meal-planner'
           liveLink='https://mealthyme.xyz/'
-          imageFile={mealthyme}
+          videoFile={mealthyme}
         >
           <FontAwesomeIcon icon={faJs} size='lg' />
           <FontAwesomeIcon icon={faReact} size='lg' />
           <FontAwesomeIcon icon={faSass} size='lg' />
           <FontAwesomeIcon icon={faNodeJs} size='lg' />
-          <img src={redux} />
-          <img src={postgresql} />
+          <img src={redux} alt='redux-icon' />
+          <img src={postgresql} alt='postgresql-icon' />
         </Project>
         <Project
           title='Simple Studio'
           desc='A React web application designed for music teachers help manage their studio of music students. The application assists with scheduling, managing students personal information, creating assignments, sending invoices and handling payments through Stripe.'
           githubLink='https://github.com/saulmaldonado/SimpleStudio'
           liveLink='https://simplestudio.xyz/'
-          imageFile={simplestudio}
+          videoFile={simplestudio}
         >
           <FontAwesomeIcon icon={faJs} size='lg' />
           <FontAwesomeIcon icon={faReact} size='lg' />
           <FontAwesomeIcon icon={faNodeJs} size='lg' />
-          <img src={redux} />
-          <img src={postgresql} />
-          <img src={stripe} />
+          <img src={redux} alt='redux-icon' />
+          <img src={postgresql} alt='postgresql-icon' />
+          <img src={stripe} alt='stripe-icon' />
         </Project>
         <Project
           title='Grocery Store'
           desc='An Angular Firebase e-commerce store for ordering grocery items where users sign in using firebase Google authentication. Users are able to browse and filter products, purchase products and review past orders. Admins are able create and manage store products and review customers transactions.'
           liveLink='https://grocery-shop-cd470.web.app/'
           githubLink='https://github.com/saulmaldonado/grocery-store'
-          imageFile={grocerystrore}
+          videoFile={grocerystrore}
         >
-          <img src={typescript} />
+          <img src={typescript} alt='typescript-icon' />
           <FontAwesomeIcon icon={faAngular} size='lg' />
           <FontAwesomeIcon icon={faBootstrap} size='lg' />
-          <img src={firebase} />
+          <img src={firebase} alt='firebase-icon' />
         </Project>
         <Project
           title='Crypto Tracker'
           desc="A React web that serves as a virtual cryptocurrency portfolio where users are able to buy and sell currencies in order to build their portfolio and analyze its change in value over time. The application uses CoinMarketCap’s API to retrieve live market data and update it portfolios' periodically."
           liveLink='http://206.189.234.247:5051/'
           githubLink='https://github.com/saulmaldonado/CryptoTracker'
-          imageFile={cryptotracker}
+          videoFile={cryptotracker}
         >
           <FontAwesomeIcon icon={faJs} size='lg' />
           <FontAwesomeIcon icon={faReact} size='lg' />
           <FontAwesomeIcon icon={faNodeJs} size='lg' />
-          <img src={mongodb} />
+          <img src={mongodb} alt='mongodb-icon' />
         </Project>
         <Project
           title='Done With It'
           desc="A mobile React Native app for posting and selling items you don't need anymore. Users are able to post listings and and upload photos from the device's photo library. Backend is built using Deno and the oak framework"
           githubLink='https://github.com/saulmaldonado/grocery-store'
           liveLink='https://expo.io/@saulmaldonado/DoneWithIt'
-          imageFile={donewithit}
+          videoFile={donewithit}
         >
-          <img src={typescript} />
-          <img src={reactnative} />
-          <img src={mongodb} />
+          <img src={typescript} alt='typescript-icon' />
+          <img src={reactnative} alt='react-native-icon' />
+          <img src={mongodb} alt='mongodb-icon' />
         </Project>
       </div>
     </section>

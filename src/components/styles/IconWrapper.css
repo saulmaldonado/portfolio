@@ -23,11 +23,12 @@
   border-radius: 100px;
   height: 10px;
   width: 10px;
-  padding: 20px;
+  padding: 25px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .icon-with-title:hover .icon-title {
@@ -59,7 +60,7 @@
   }
 
   .icon-wrapper {
-    padding: 15px;
+    padding: 25px;
   }
 }
 @media (max-width: 800px) {

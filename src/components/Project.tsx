@@ -7,14 +7,14 @@ import { faGithubSquare, IconDefinition } from '@fortawesome/free-brands-svg-ico
 import './styles/Project.css';
 
 type Props = {
-  imageFile: string;
+  videoFile: string;
   title: string;
   desc: string;
   githubLink: string;
   liveLink: string;
 };
 
-const Project: FC<Props> = ({ imageFile, desc, githubLink, liveLink, title, children }) => {
+const Project: FC<Props> = ({ videoFile, desc, githubLink, liveLink, title, children }) => {
   return (
     <div className='project-container'>
       <div className='project-details'>
@@ -35,7 +35,9 @@ const Project: FC<Props> = ({ imageFile, desc, githubLink, liveLink, title, chil
         </div>
       </div>
       <div className='project-mockup'>
-        <img src={imageFile} alt='project-demo' />
+        <video autoPlay loop muted>
+          <source src={videoFile} type='video/webm' />
+        </video>
       </div>
     </div>
   );
