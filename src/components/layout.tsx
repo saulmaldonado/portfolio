@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} sidebarRef={sidebarRef} />
-      <div onClick={(e) => console.dir(e.target)}>
+      <div>
         <SideNav sidebarRef={sidebarRef} />
         <main>{children}</main>
         <footer>
