@@ -14,7 +14,7 @@ import Project from '../Project';
 import mealthyme from '../../images/mealthyme.gif';
 import simplestudio from '../../images/simplestudio.gif';
 import grocerystrore from '../../images/grocery-store.gif';
-import cryptotracker from '../../images/cryptotracker.gif';
+import cryptotracker from '../../images/cryptoTracker.gif';
 import donewithit from '../../images/donewithit.gif';
 import redux from '../../images/redux.png';
 import postgresql from '../../images/postgresql.png';
