@@ -6,6 +6,8 @@
   margin-right: 10px;
   cursor: pointer;
   max-width: 60px;
+
+  --active-color: #05968a;
 }
 
 .icon-title {
@@ -34,6 +36,7 @@
 
 .icon-with-title:hover .icon-wrapper {
   border: rgb(255, 255, 255) solid 2px;
+  background-color: var(--active-color);
 }
 
 @keyframes IconTitle {
@@ -45,5 +48,32 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .icon-with-title {
+    margin-right: 10px;
+    cursor: pointer;
+    max-width: 40px;
+  }
+
+  .icon-wrapper {
+    padding: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .icon-with-title {
+    max-width: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .icon-with-title {
+    max-width: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .icon-with-title {
+    max-width: 25px;
   }
 }

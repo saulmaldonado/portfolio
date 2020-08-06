@@ -8,5 +8,30 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(39, 39, 39);
+  background-color: #222;
+}
+
+footer {
+  height: 15vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > span {
+  color: white;
+}
+footer > span > span {
+  color: #05968a;
+}
+
+.footer-icons {
+  margin-left: 20px;
+  position: relative;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

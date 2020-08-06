@@ -1,11 +1,9 @@
 .skills-section {
-  height: 45vh;
   color: white;
-  padding-left: 20px;
-  padding-top: 20px;
+  border-top: white solid 2px;
+  padding: 40px;
   background-color: rgb(39, 39, 39);
 }
-/* background-color: #05968a; */
 
 .skills-section .skills-header {
   box-sizing: border-box;
@@ -20,10 +18,28 @@
 }
 
 .skills > div {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
-@media (max-height: 1000px) {
+.about {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+.about > p {
+  line-height: 25px;
+}
+
+@media (max-width: 700px) {
+  .skills-section {
+    padding: 20px;
+  }
+  .skills {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+}
+
+/* @media (max-height: 1000px) {
   .skills-section {
     height: 50vh;
   }
@@ -42,4 +58,4 @@
   .skills-section {
     height: 100vh;
   }
-}
+} */

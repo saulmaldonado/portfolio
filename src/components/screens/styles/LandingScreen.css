@@ -58,13 +58,20 @@
   font-size: 1.5rem;
   position: relative;
   bottom: 20px;
+  width: 50%;
 }
-
 .subtitle {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   animation: 1s ease-in-out 2s 1 Icons both;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
 }
 
 .subtitle .description {
@@ -86,6 +93,7 @@
   align-items: center;
   justify-content: space-evenly;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   animation: 0.5s ease-in-out 3s 1 CallToAction both;
 }
@@ -201,5 +209,63 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 800px) {
+  .landing {
+    background: url('../../../images/landing-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+  }
+}
+
+@media (max-width: 1250px) {
+  .subtitle h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1150px) {
+  .subtitle h4 {
+  }
+}
+@media (max-width: 965px) {
+  .title-section h1 {
+    font-size: 3rem;
+  }
+  .subtitle h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .subtitle {
+    flex-direction: column;
+  }
+  .subtitle > h4 {
+    margin-bottom: 0px;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .subtitle > h4 {
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .icons-row {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
   }
 }

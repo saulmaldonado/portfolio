@@ -9,7 +9,6 @@ import {
   faVuejs,
   faPython,
   faJava,
-  faGit,
   faGitAlt,
   faBootstrap,
 } from '@fortawesome/free-brands-svg-icons';
@@ -21,22 +20,41 @@ const SkillsScreen = () => {
   return (
     <section className='skills-section'>
       <header className='skills-header'>
-        <h2>Skills</h2>
+        <h2>About</h2>
       </header>
+      <div className='about'>
+        <p className='about-text'>
+          I am a Dallas based full stack developer with over a year of experience in developing web
+          applications and static sites. Formerly known as a musician, I spent the past year
+          self-teaching HTML, CSS and JS and in Feburary 2020 I graduated from Devmoutain coding
+          bootcamp. Currently, I am learning a variety of different languages and frameworks as a
+          way to broaden my knowledge of software and web development.
+        </p>
+      </div>
+      <h2>Skills</h2>
+      <p>My current favorite stack to work with:</p>
+      <div className='skills'>
+        <SkillsIcon title='Typescript' size='2x'>
+          <img src='https://img.icons8.com/color/48/000000/typescript.png' />
+        </SkillsIcon>
+        <SkillsIcon icon={faReact} color='dodgerblue' title='React' size='2x' />
+        <SkillsIcon title='GraphQL' size='2x'>
+          <img src='https://img.icons8.com/color/48/000000/graphql.png' />
+        </SkillsIcon>
+        <SkillsIcon title='MongoDB'>
+          <img src='https://img.icons8.com/color/48/000000/mongodb.png' />
+        </SkillsIcon>
+      </div>
       <div className='skills-subtitle'>
-        <p>Languages and technologies I have experience and am component working with: </p>
+        <p>I also have a wide variety of other technologies and languages I know and work:</p>
       </div>
       <div className='skills'>
         <SkillsIcon icon={faHtml5} color='tomato' title='HTML5' size='2x' />
         <SkillsIcon icon={faCss3} color='dodgerblue' title='CSS3' size='2x' />
         <SkillsIcon icon={faJs} color='yellow' title='Javascript' size='2x' />
-        <SkillsIcon title='Typescript' size='2x'>
-          <img src='https://img.icons8.com/color/48/000000/typescript.png' />
-        </SkillsIcon>
         <SkillsIcon title='React Native'>
           <img src='https://img.icons8.com/color/48/000000/react-native.png' />
         </SkillsIcon>
-        <SkillsIcon icon={faReact} color='dodgerblue' title='React' size='2x' />
         <SkillsIcon title='Redux'>
           <img src='https://img.icons8.com/color/48/000000/redux.png' />{' '}
         </SkillsIcon>
@@ -44,9 +62,6 @@ const SkillsScreen = () => {
         <SkillsIcon icon={faVuejs} color='green' title='Vue' size='2x' />
         <SkillsIcon icon={faBootstrap} color='purple' title='Bootstrap' size='2x' />
         <SkillsIcon icon={faNodeJs} color='green' title='NodeJS' size='2x' />
-        <SkillsIcon title='GraphQL' size='2x'>
-          <img src='https://img.icons8.com/color/48/000000/graphql.png' />
-        </SkillsIcon>
         <SkillsIcon title='Apollo' size='2x'>
           <img src='https://img.icons8.com/color/48/000000/apollo.png' />
         </SkillsIcon>
@@ -61,9 +76,6 @@ const SkillsScreen = () => {
         <SkillsIcon icon={faGitAlt} color='tomato' title='Git' size='2x' />
         <SkillsIcon title='PostgreSQL' size='2x'>
           <img src='https://img.icons8.com/color/48/000000/postgreesql.png' />
-        </SkillsIcon>
-        <SkillsIcon title='MongoDB'>
-          <img src='https://img.icons8.com/color/48/000000/mongodb.png' />
         </SkillsIcon>
       </div>
     </section>

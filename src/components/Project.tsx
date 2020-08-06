@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC, ReactChildren } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 import './styles/Project.css';
 
@@ -14,15 +14,15 @@ type Props = {
   liveLink: string;
 };
 
-const Project: FC<Props> = ({ imageFile, desc, githubLink, liveLink, title }) => {
+const Project: FC<Props> = ({ imageFile, desc, githubLink, liveLink, title, children }) => {
   return (
     <div className='project-container'>
       <div className='project-details'>
         <div className='project-desc'>
-          <h3 className='project-title'>{title}</h3>
+          <h2 className='project-title'>{title}</h2>
           <p className='project-subtitle'>{desc}</p>
-          {/* <div className='project-tech'></div> */}
         </div>
+        <div className='project-tech'>{children}</div>
         <div className='project-buttons'>
           <a href={githubLink} target='_blank' className='project-github'>
             <span>Github</span>

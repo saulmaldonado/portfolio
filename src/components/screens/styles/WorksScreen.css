@@ -1,7 +1,10 @@
 .works-section {
-  height: 100vh;
   /* border: white solid 2px; */
   color: white;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  border-top: white solid 2px;
+  background: rgb(126, 56, 56);
 }
 
 .works-header {
@@ -10,9 +13,16 @@
 }
 
 .works {
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+@media (max-width: 1250px) {
+  .works-section {
+    color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-top: white solid 2px;
+  }
 }

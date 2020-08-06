@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import LandingScreen from '../components/screens/LandingScreen';
 import SkillsScreen from '../components/screens/SkillsScreen';
 import WorksScreen from '../components/screens/WorksScreen';
+import ContactScreen from '../components/screens/ContactScreen';
 
 const IndexPage = () => (
   <Layout>
@@ -13,8 +14,7 @@ const IndexPage = () => (
     <LandingScreen />
     <SkillsScreen />
     <WorksScreen />
-    <Link to='/page-2/'>Go to page 2</Link> <br />
-    <Link to='/using-typescript/'>Go to "Using TypeScript"</Link>
+    <ContactScreen />
   </Layout>
 );
 

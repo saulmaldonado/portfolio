@@ -1,6 +1,7 @@
 .sidenav-btn {
-  color: grey;
+  color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
+  --active-color: #05968a;
 }
 
 .sidenav-btn > h1 {
@@ -21,14 +22,14 @@
   bottom: -5px;
   left: 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--active-color);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
 
 .sidenav-btn:hover {
-  color: white;
+  color: var(--active-color);
 }
 
 .sidenav-btn:hover > h1::after {
