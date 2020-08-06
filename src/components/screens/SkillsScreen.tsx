@@ -26,7 +26,7 @@ const SkillsScreen = () => {
         <p className='about-text'>
           I am a Dallas based full stack developer with over a year of experience in developing web
           applications and static sites trying to break into the tech industry. Formerly known as a
-          musician, I spent the past year self-teaching HTML, CSS and JS and in Feburary 2020 I
+          musician, I spent the past year self-teaching HTML, CSS and JS and in February 2020 I
           graduated from Devmoutain coding bootcamp. Currently, I am learning different languages
           and experimenting with newer frameworks and libraries to broaden my knowledge of software
           and web development.
