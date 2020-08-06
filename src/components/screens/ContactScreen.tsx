@@ -4,7 +4,7 @@ import './styles/ContactScreen.css';
 
 const ContactScreen = () => {
   return (
-    <section className='form-section'>
+    <section className='form-section' id='contact'>
       <div className='form-container'>
         <form>
           <h2>Contact Me!</h2>

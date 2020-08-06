@@ -4,7 +4,6 @@ import {
   faNodeJs,
   faJs,
   faHtml5,
-  faCss3,
   faSass,
   faAngular,
   faBootstrap,
@@ -29,7 +28,7 @@ import './styles/WorksScreen.css';
 
 const WorksScreen = () => {
   return (
-    <section className='works-section'>
+    <section className='works-section' id='works'>
       <header className='works-header'>
         <h2>Works</h2>
         <p>Projects I've worked on: </p>
@@ -38,7 +37,7 @@ const WorksScreen = () => {
         <Project
           title='Meal Thyme'
           desc=' 
-A meal planning app where users are able to browes recipes from Spooacular’s API. Users are able to make their own recipes as well as schedule meals using an interactive calendar, create a shopping list, maintain a fridge and view analyze nutrition information.'
+A meal planning app where users are able to browse recipes from Spooacular’s API. Users are able to post their own recipes as well as schedule meals using an interactive calendar, build ingredient shopping lists, manage fridges and visualize nutritional information.'
           githubLink='https://github.com/saulmaldonado/meal-planner'
           liveLink='https://mealthyme.xyz/'
           imageFile={mealthyme}
@@ -52,7 +51,7 @@ A meal planning app where users are able to browes recipes from Spooacular’s A
         </Project>
         <Project
           title='Simple Studio'
-          desc='A React web application designed for music teachers help manage their studio of music students for them. The application helps with scheduling, managing students personal information, making assignments and making invoices and handling payments through Stripe.'
+          desc='A React web application designed for music teachers help manage their studio of music students. The application assists with scheduling, managing students personal information, creating assignments, sending invoices and handling payments through Stripe.'
           githubLink='https://github.com/saulmaldonado/SimpleStudio'
           liveLink='https://simplestudio.xyz/'
           imageFile={simplestudio}
@@ -73,13 +72,12 @@ A meal planning app where users are able to browes recipes from Spooacular’s A
         >
           <img src={typescript} />
           <FontAwesomeIcon icon={faAngular} size='lg' />
-          <FontAwesomeIcon icon={faHtml5} size='lg' />
           <FontAwesomeIcon icon={faBootstrap} size='lg' />
           <img src={firebase} />
         </Project>
         <Project
           title='Crypto Tracker'
-          desc='A React web that serves as a virtual cryptocurrency portfolio where users are able to buy and sell currencies in order to build their portfolio and analyse its change in value over time. The application uses CoinMarketCap’s API to get live market data and update it periodically.'
+          desc="A React web that serves as a virtual cryptocurrency portfolio where users are able to buy and sell currencies in order to build their portfolio and analyze its change in value over time. The application uses CoinMarketCap’s API to retrieve live market data and update it portfolios' periodically."
           liveLink='http://206.189.234.247:5051/'
           githubLink='https://github.com/saulmaldonado/CryptoTracker'
           imageFile={cryptotracker}
@@ -87,6 +85,7 @@ A meal planning app where users are able to browes recipes from Spooacular’s A
           <FontAwesomeIcon icon={faJs} size='lg' />
           <FontAwesomeIcon icon={faReact} size='lg' />
           <FontAwesomeIcon icon={faNodeJs} size='lg' />
+          <img src={mongodb} />
         </Project>
         <Project
           title='Done With It'

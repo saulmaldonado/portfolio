@@ -10,6 +10,7 @@ import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 
 import './styles/LandingScreen.css';
 import IconWrapper from '../IconWrapper';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 const LandingScreen = () => {
   const data = useStaticQuery(graphql`
@@ -58,7 +59,7 @@ const LandingScreen = () => {
   } = data.site.siteMetadata.socials;
 
   return (
-    <main className='landing'>
+    <main className='landing' id='home'>
       <div className='landing-mask-loading'>
         <div className='landing-mask'>
           <div className='title-section'>
@@ -110,10 +111,13 @@ const LandingScreen = () => {
                 />
               </div>
             </div>
-            <button className='call-to-action'>
-              <span>View my work</span>
-              <div className='arrow'></div>
-            </button>
+
+            <AnchorLink to='/#works'>
+              <button className='call-to-action'>
+                <span>View my work</span>
+                <div className='arrow'></div>
+              </button>
+            </AnchorLink>
           </div>
         </div>
       </div>

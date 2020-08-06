@@ -27,11 +27,8 @@ footer > span > span {
   color: #05968a;
 }
 
-.footer-icons {
-  margin-left: 20px;
-  position: relative;
-  top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 400px) {
+  footer {
+    font-size: 15px;
+  }
 }

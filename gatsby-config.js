@@ -33,6 +33,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-anchor-links`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

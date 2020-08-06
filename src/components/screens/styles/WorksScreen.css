@@ -8,14 +8,32 @@
 }
 
 .works-header {
-  padding-left: 20px;
-  padding-top: 20px;
+  margin-left: 12vw;
+  padding-top: 10px;
+}
+
+.works-header > h2 {
+  margin-left: 0px;
 }
 
 .works {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+@media (max-width: 1400px) {
+  .works-section {
+    color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-top: white solid 2px;
+  }
+
+  .works-header {
+    margin-left: 10vw;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 1250px) {
