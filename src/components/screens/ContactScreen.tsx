@@ -13,8 +13,11 @@ const ContactScreen = () => {
           <span>
             Interested on working on a project together, looking for someone to add to your team,
             questions on any of the technologies I've used, or would just like to say hello? Send me
-            an email at <a href='mailto:samaldonado2@gmail.com'>samaldonado4@gmail.com</a> directly
-            or use the form below.
+            an email at{' '}
+            <a target='_blank' rel='noopener' href='mailto:samaldonado2@gmail.com'>
+              samaldonado4@gmail.com
+            </a>{' '}
+            directly or use the form below.
           </span>
           <label className='name-label'>
             Name

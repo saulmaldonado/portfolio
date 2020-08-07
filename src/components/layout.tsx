@@ -27,7 +27,9 @@ const Layout = ({ children }) => {
         <footer>
           <span>
             Saul Maldonado <span>© {new Date().getFullYear()}</span>, Built with{' '}
-            <a href='https://www.gatsbyjs.org'>Gatsby</a>
+            <a rel='noopener' target='_blank' href='https://www.gatsbyjs.org'>
+              Gatsby
+            </a>
           </span>
         </footer>
       </div>

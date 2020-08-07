@@ -24,11 +24,11 @@ const Project: FC<Props> = ({ videoFile, desc, githubLink, liveLink, title, chil
         </div>
         <div className='project-tech'>{children}</div>
         <div className='project-buttons'>
-          <a href={githubLink} target='_blank' className='project-github'>
+          <a href={githubLink} rel='noopener' target='_blank' className='project-github'>
             <span>Github</span>
             <FontAwesomeIcon icon={faGithubSquare} size='lg' />
           </a>
-          <a href={liveLink} target='_blank' className='project-live'>
+          <a href={liveLink} target='_blank' rel='noopener' className='project-live'>
             <span>Live Site</span>
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </a>

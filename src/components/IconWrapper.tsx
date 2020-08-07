@@ -9,7 +9,7 @@ const IconWrapper: FC<FontAwesomeIconProps & { handle?: string; link?: string }>
   ...props
 }) => {
   return (
-    <a href={link} target='_blank'>
+    <a href={link} rel='noopener' target='_blank'>
       <div className='icon-with-title'>
         <div className='icon-wrapper'>
           <FontAwesomeIcon {...props} />
