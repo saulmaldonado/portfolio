@@ -53,7 +53,7 @@
   animation: 1s ease-in-out 2s 1 Separator both;
 }
 
-.subtitle h4 {
+.subtitle h2 {
   color: white;
   font-size: 1.5rem;
   position: relative;
@@ -228,7 +228,7 @@ a {
 }
 
 @media (max-width: 1250px) {
-  .subtitle h4 {
+  .subtitle h2 {
     font-size: 1rem;
   }
 }
@@ -236,7 +236,7 @@ a {
   .title-section h1 {
     font-size: 3rem;
   }
-  .subtitle h4 {
+  .subtitle h2 {
     font-size: 1rem;
   }
 }
@@ -245,7 +245,7 @@ a {
   .subtitle {
     flex-direction: column;
   }
-  .subtitle > h4 {
+  .subtitle > h2 {
     margin-bottom: 0px;
     font-size: 22px;
     width: 100%;
@@ -259,7 +259,7 @@ a {
 }
 
 @media (max-width: 450px) {
-  .subtitle > h4 {
+  .subtitle > h2 {
     margin-bottom: 0px;
     font-size: 15px;
     width: 100%;
