@@ -9,7 +9,7 @@ import ContactScreen from '../components/screens/ContactScreen';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title='Home' />
+    <SEO title='Portfolio' />
     <LandingScreen />
     <SkillsScreen />
     <WorksScreen />

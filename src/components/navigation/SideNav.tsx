@@ -16,8 +16,8 @@ const SideNav: FC<Props> = ({ sidebarRef }) => {
       </div>
       <div className='sidenav-menu'>
         <SideNavButtons title='Home' anchor='home' sidebarRef={sidebarRef} />
-        <SideNavButtons title='Skills' anchor='about' sidebarRef={sidebarRef} />
-        <SideNavButtons title='Projects' anchor='works' sidebarRef={sidebarRef} />
+        <SideNavButtons title='About' anchor='about' sidebarRef={sidebarRef} />
+        <SideNavButtons title='Works' anchor='works' sidebarRef={sidebarRef} />
         <SideNavButtons title='Contact' anchor='contact' sidebarRef={sidebarRef} />
       </div>
     </div>
