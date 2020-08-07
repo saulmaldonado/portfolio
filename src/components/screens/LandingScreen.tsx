@@ -65,7 +65,7 @@ const LandingScreen = () => {
           <div className='title-section'>
             <h1 className='title'>{data.site.siteMetadata.title}</h1>
             <div className='subtitle'>
-              <h2>{data.site.siteMetadata.description}</h2>
+              <h4>{data.site.siteMetadata.description}</h4>
               <div className='icons-row'>
                 <IconWrapper
                   handle={linkedin.username}
