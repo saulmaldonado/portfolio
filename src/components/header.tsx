@@ -17,7 +17,6 @@ const MenuButton: FC<{
 }> = ({ sidebarRef }) => {
   return (
     <div className='menu-button' onClick={() => sidebarRef.current.classList.add('open')}>
-      <h4>Menu</h4>
       <div className='menu-btn'>
         <div className='menu-btn-burger'></div>
       </div>
