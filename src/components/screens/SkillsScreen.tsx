@@ -24,16 +24,16 @@ const SkillsScreen = () => {
       </header>
       <div className='about'>
         <p className='about-text'>
-          I am a Dallas based full stack developer with over a year of experience in developing web
-          applications and static sites trying to break into the tech industry. Formerly known as a
-          musician, I spent the past year self-teaching HTML, CSS and JS and in February 2020 I
-          graduated from Devmoutain coding bootcamp. Currently, I am learning different languages
-          and experimenting with newer frameworks and libraries to broaden my knowledge of software
-          and web development.
+          An aspiring Dallas based full stack developer with over a year of experience in developing
+          web applications and static sites. Former music arranger and educator. Devmoutain coding
+          bootcamp graduate. Deep knowledge working with industry standard JavaScript and TypeScript
+          backend and frontend frameworks. Never-ending curiosity for learning the latest languages,
+          frameworks and libraries for providing the best short and long term solutions for clients
+          and teams.
         </p>
       </div>
       <h2>Skills</h2>
-      <p>My current favorite stack to work with:</p>
+      <p>Current favorite stack to work with:</p>
       <div className='skills'>
         <SkillsIcon title='Typescript' size='2x'>
           <img src='https://img.icons8.com/color/48/000000/typescript.png' alt='typescript-icon' />
@@ -47,7 +47,7 @@ const SkillsScreen = () => {
         </SkillsIcon>
       </div>
       <div className='skills-subtitle'>
-        <p>I also have a wide variety of other technologies and languages I know and work:</p>
+        <p>Wide variety of other technologies and languages I've work with:</p>
       </div>
       <div className='skills'>
         <SkillsIcon icon={faHtml5} color='tomato' title='HTML5' size='2x' />
