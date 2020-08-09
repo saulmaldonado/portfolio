@@ -37,7 +37,7 @@ const WorksScreen = () => {
         <Project
           title='Meal Thyme'
           desc=' 
-A meal planning app where users are able to browse recipes from Spooacular’s API. Users are able to post their own recipes as well as schedule meals using an interactive calendar, build ingredient shopping lists, manage fridges and visualize nutritional information.'
+A meal planning app where users are able to browse recipes from Spoonacular’s API. Users are able to post their own recipes as well as schedule meals using an interactive calendar, build ingredient shopping lists, manage fridges and visualize nutritional information.'
           githubLink='https://github.com/saulmaldonado/meal-planner'
           liveLink='https://mealthyme.xyz/'
           videoFile={mealthyme}
