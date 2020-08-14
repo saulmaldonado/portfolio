@@ -11,9 +11,11 @@ const ContactScreen = () => {
           <input type='hidden' name='form-name' value='contact' />
           <h2>Contact Me!</h2>
           <span>
-            Interested on working on a project together, looking for someone to add to your team,
-            questions on any of the technologies I've used, or would just like to say hello? Send me
-            an email at{' '}
+            If you are a developer lets connect and talk about project we've been working on,
+            frameworks and languages we've been working with, or possibly talk about working on a
+            project together. If you are looking to add someone to your team or looking for someone
+            to work on a project with, lets connect and we can talk about how I can help solve your
+            problems. an email at{' '}
             <a target='_blank' rel='noopener' href='mailto:samaldonado2@gmail.com'>
               samaldonado4@gmail.com
             </a>{' '}

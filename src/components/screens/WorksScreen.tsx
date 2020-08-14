@@ -3,7 +3,6 @@ import {
   faReact,
   faNodeJs,
   faJs,
-  faHtml5,
   faSass,
   faAngular,
   faBootstrap,

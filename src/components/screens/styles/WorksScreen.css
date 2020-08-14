@@ -41,6 +41,15 @@
     color: white;
     padding-left: 1vw;
     padding-right: 1vw;
+
     border-top: white solid 2px;
+  }
+  .works-header {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .works-header > h2 {
+    padding-left: 0px;
   }
 }

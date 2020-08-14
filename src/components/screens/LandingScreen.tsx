@@ -7,6 +7,7 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
+import BackgroundImage from 'gatsby-background-image';
 
 import './styles/LandingScreen.css';
 import IconWrapper from '../IconWrapper';
