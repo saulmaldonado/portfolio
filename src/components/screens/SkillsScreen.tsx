@@ -24,13 +24,23 @@ const SkillsScreen = () => {
       </header>
       <div className='about'>
         <p className='about-text'>
-          A Dallas based full stack web developer with over 1,500+ collective hours of experience in
-          coding, developing web applications and developing static sites. Former music arranger and
-          educator. Devmoutain coding bootcamp graduate. Deep knowledge working with industry
-          standard backend and frontend languages and frameworks such as JavaScript, TypeScript,
-          React, Angular, NodeJS, GraphQL, HTML and CSS . Never-ending curiosity for learning the
-          greatest and latest languages, frameworks and libraries for providing the best short and
-          long term solutions for clients and an invaluable knowledge and perspective teams.
+          <ul>
+            <li>
+              A Dallas based full stack web developer with over 1,500+ collective hours of
+              experience in coding, developing web applications and developing static sites.
+            </li>
+            <li>Former music arranger and educator. Devmoutain coding bootcamp graduate.</li>
+            <li>
+              Deep knowledge working with industry standard backend and frontend languages and
+              frameworks such as JavaScript, TypeScript, React, Angular, NodeJS, GraphQL, HTML and
+              CSS.
+            </li>
+            <li>
+              Never-ending curiosity for learning the greatest and latest languages, frameworks and
+              libraries for providing the best short and long term solutions for clients and an
+              invaluable knowledge and perspective teams.
+            </li>
+          </ul>
         </p>
       </div>
       <h2>Skills</h2>

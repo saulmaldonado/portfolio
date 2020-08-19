@@ -8,10 +8,11 @@
   --primary-text-color: white;
   --secondary-text-color: grey;
   --active-color: #05968a;
+  --secondary-text-color-inactive: rgba(128, 128, 128, 0.5);
 }
 
 .menu-button {
-  border: grey solid 2px;
+  border: var(--secondary-text-color) solid 2px;
   color: var(--secondary-text-color);
   position: fixed;
   top: 10px;
@@ -86,4 +87,19 @@ header > div > h4 {
 .menu-button:hover .menu-btn-burger::after {
   background-color: var(--primary-text-color);
   transform: translateY(10px);
+}
+
+@media (max-width: 600px) {
+  .menu-button {
+    border: var(--secondary-text-color-inactive) solid 2px;
+  }
+
+  .menu-btn-burger {
+    background: var(--secondary-text-color-inactive);
+  }
+
+  .menu-btn-burger::before,
+  .menu-btn-burger::after {
+    background: var(--secondary-text-color-inactive);
+  }
 }
