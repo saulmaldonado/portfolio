@@ -6,6 +6,8 @@ import {
   faSass,
   faAngular,
   faBootstrap,
+  faVuejs,
+  faNode,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -15,6 +17,8 @@ import simplestudio from '../../videos/simplestudio.webm';
 import grocerystrore from '../../videos/grocerystore.webm';
 import cryptotracker from '../../videos/cryptoTracker.webm';
 import donewithit from '../../videos/donewithit.webm';
+import shareThisPage from '../../videos/share-this-page.webm';
+import chatApp from '../../videos/chat-app.webm';
 import redux from '../../images/redux.png';
 import postgresql from '../../images/postgresql.png';
 import stripe from '../../images/stripe.png';
@@ -22,6 +26,7 @@ import typescript from '../../images/typescript.png';
 import firebase from '../../images/firebase.png';
 import reactnative from '../../images/react-native.png';
 import mongodb from '../../images/mongodb.png';
+import redis from '../../images/redis.png';
 
 import './styles/WorksScreen.css';
 
@@ -77,7 +82,7 @@ A meal planning app where users are able to browse recipes from Spoonacular’s 
         <Project
           title='Crypto Tracker'
           desc="A React web that serves as a virtual cryptocurrency portfolio where users are able to buy and sell currencies in order to build their portfolio and analyze its change in value over time. The application uses CoinMarketCap’s API to retrieve live market data and update it portfolios' periodically."
-          liveLink='http://206.189.234.247:5051/'
+          liveLink='https://saulmaldonado.xyz/crypto-tracker/'
           githubLink='https://github.com/saulmaldonado/CryptoTracker'
           videoFile={cryptotracker}
         >
@@ -96,6 +101,27 @@ A meal planning app where users are able to browse recipes from Spoonacular’s 
           <img src={typescript} alt='typescript-icon' />
           <img src={reactnative} alt='react-native-icon' />
           <img src={mongodb} alt='mongodb-icon' />
+        </Project>
+        <Project
+          title='Chat App'
+          desc="A functional chat application inspired from Frontend Mentors' Chat app illustration challenge. Wrapped in a Vue component plugin"
+          githubLink='https://github.com/saulmaldonado/chat-app'
+          liveLink='https://saulmaldonado.github.io/chat-app/'
+          videoFile={chatApp}
+        >
+          <FontAwesomeIcon icon={faVuejs} size='lg' />
+          <FontAwesomeIcon icon={faNodeJs} size='lg' />
+        </Project>
+        <Project
+          title='Share This Page'
+          desc='A zero-configuration React component library for generating social media sharing links to the current web page'
+          githubLink='https://github.com/saulmaldonado/share-this-page'
+          liveLink='https://saulmaldonado.github.io/share-this-page/'
+          videoFile={shareThisPage}
+        >
+          <FontAwesomeIcon icon={faReact} size='lg' />
+          <FontAwesomeIcon icon={faNodeJs} size='lg' />
+          <img src={redis} alt='redis-icon' />
         </Project>
       </div>
     </section>

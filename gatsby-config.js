@@ -26,7 +26,7 @@ module.exports = {
       },
       resume: {
         username: 'resume',
-        link: 'https://drive.google.com/file/d/12rKxgzj4BJvUVwZao_UMmB52sSFaN2ni/view?usp=sharing',
+        link: 'https://drive.google.com/file/d/1p1uj5QpLKBx84amKaNQcwvTsiydSpfah/view?usp=sharing',
       },
     },
   },

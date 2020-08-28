@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import portfolio from '../images/portfolio.png';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title }: any) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -67,6 +67,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: portfolio,
         },
       ].concat(meta)}
     />

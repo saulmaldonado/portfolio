@@ -1,4 +1,16 @@
-declare module '*.gif';
+declare module '*.css' {
+  const content: { [className: string]: string };
+  export default content;
+}
+
+interface SvgrComponent extends React.StatelessComponent<React.SVGAttributes<SVGElement>> {}
+
+declare module '*.svg' {
+  const svgUrl: string;
+  const svgComponent: SvgrComponent;
+  export default svgUrl;
+  export { svgComponent as ReactComponent };
+}
 
 declare module '*.png' {
   const pngUrl: string;
@@ -6,6 +18,8 @@ declare module '*.png' {
   export default pngUrl;
 }
 
-declare module '*.webm';
+declare module '*.webm' {
+  const webmUrl: string;
 
-export {};
+  export default webmUrl;
+}
