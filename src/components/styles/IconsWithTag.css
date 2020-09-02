@@ -7,3 +7,9 @@
 .container span {
   font-size: 0.7rem;
 }
+
+@media (max-width: 400px) {
+  .container span {
+    font-size: 0.6rem;
+  }
+}

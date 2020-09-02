@@ -83,8 +83,13 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 60%;
+  max-width: 100%;
+  min-width: 50%;
   margin-bottom: 10px;
+}
+
+.project-tech .container:not(:first-child) {
+  margin-left: 10px;
 }
 
 .project-mockup > video {
@@ -143,6 +148,7 @@
 
   .project-details p {
     font-size: 15px;
+    text-align: center;
   }
 
   .project-details h2 {
@@ -175,14 +181,12 @@
 }
 @media (max-width: 400px) {
   .project-container {
-    min-height: 600px;
-    margin-left: 5px;
-    margin-right: 10px;
+    min-height: 700px;
   }
 
   .project-details {
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
     padding-top: -50px;
   }
 }

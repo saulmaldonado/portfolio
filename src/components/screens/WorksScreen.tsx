@@ -87,7 +87,7 @@ A meal planning app where users are able to browse recipes from Spoonacular’s 
           </IconsWithTag>
           <IconsWithTag tag='PostgreSQL'>
             <img src={postgresql} alt='postgresql-icon' />
-          </IconsWithTag>{' '}
+          </IconsWithTag>
           <IconsWithTag tag='Stripe'>
             <img src={stripe} alt='stripe-icon' />
           </IconsWithTag>
